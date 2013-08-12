@@ -1,0 +1,948 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0095)http://cs1691x-a.moocforums.org/questions/372/pragmatic-learning-thinking-refactor-your-wetware -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>pragmatic learning &amp; thinking : Refactor your wetware - CS169.1x</title>
+        <meta name="description" content="I wanna ask you guys if someone here is reading or read that book , I started yesterday and I&#39;m at the third chapter , I wanna know if there&#39;s a possibility to discuss the content of the book !">
+        <meta name="keywords" content="book">
+        
+        <link rel="canonical" href="./pragmatic learning & thinking   Refactor your wetware - CS169.1x_files/pragmatic learning & thinking   Refactor your wetware - CS169.1x.htm">
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="http://cs1691x-a.moocforums.org/questions/372/pragmatic-learning-thinking-refactor-your-wetware?type=rss">
+
+        
+        
+        <link rel="shortcut icon" href="http://cs1691x-a.moocforums.org/upfiles/saas_1.ico">
+        <link href="./pragmatic learning & thinking   Refactor your wetware - CS169.1x_files/style.css" rel="stylesheet" type="text/css">
+        
+        <link rel="stylesheet" type="text/css" href="./pragmatic learning & thinking   Refactor your wetware - CS169.1x_files/jquery-ui.css">
+        <!--[if IE 6]>
+        <style type="text/css">
+        img, div, a { behavior: url(/m/default/media/iepngfix/iepngfix.htc) }
+        </style>
+        <![endif]-->
+        
+
+	<script type="text/javascript">
+	    // Give link to escape if we're in an iframe (edX places us in one by default)
+            if (self !== top) {
+                top.location = document.location;
+            }
+	</script>
+
+        <script src="./pragmatic learning & thinking   Refactor your wetware - CS169.1x_files/jsapi" type="text/javascript"></script>
+        <script type="text/javascript">
+        /*<![CDATA[*/
+            google.load("jquery", "1");
+            google.load("jqueryui", "1", {autoload:true});
+
+            var i18nLang = 'en';
+            var appUrl = 'http://cs1691x-a.moocforums.org'
+            var scriptUrl = '/'
+            var osqaSkin = 'default';
+
+            var messages = {
+                username: 'npero',
+                confirm: "Are you sure?",
+                yes: "Yes",
+                no: "No",
+                message: "Message:",
+                cancel: "Cancel",
+                close: "Close",
+                ok: "Ok",
+                matching_tags_url: "/matching_tags/",
+                word: "word",
+                words: "words",
+                character: "character",
+                characters: "characters"
+            }
+        /*]]>*/
+        </script><script src="./pragmatic learning & thinking   Refactor your wetware - CS169.1x_files/jquery.min.js" type="text/javascript"></script><script src="./pragmatic learning & thinking   Refactor your wetware - CS169.1x_files/jquery-ui.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="./pragmatic learning & thinking   Refactor your wetware - CS169.1x_files/osqa.main.js"></script>
+        
+        
+        
+        
+        <script type="text/javascript" src="./pragmatic learning & thinking   Refactor your wetware - CS169.1x_files/osqa.question.js"></script>
+        <script type="text/javascript" src="./pragmatic learning & thinking   Refactor your wetware - CS169.1x_files/jquery.caret.js"></script>
+        <script type="text/javascript" src="./pragmatic learning & thinking   Refactor your wetware - CS169.1x_files/showdown.js"></script>
+        <script type="text/javascript" src="./pragmatic learning & thinking   Refactor your wetware - CS169.1x_files/wmd.js"></script>
+        <script type="text/javascript" src="./pragmatic learning & thinking   Refactor your wetware - CS169.1x_files/html_sanitizer.js"></script>
+        <link rel="stylesheet" type="text/css" href="./pragmatic learning & thinking   Refactor your wetware - CS169.1x_files/wmd.css">
+
+        
+        <script type="text/javascript" src="./pragmatic learning & thinking   Refactor your wetware - CS169.1x_files/viewbox_min.js"></script>
+        <script type="text/javascript" src="./pragmatic learning & thinking   Refactor your wetware - CS169.1x_files/youtube.js"></script>
+        <link rel="stylesheet" type="text/css" href="./pragmatic learning & thinking   Refactor your wetware - CS169.1x_files/viewbox.css">
+        
+        
+
+        <script type="text/javascript">
+        $().ready(function(){
+            $("#nav_questions").attr('className',"on");
+            var answer_sort_tab = "";
+
+            if (answer_sort_tab) {
+                $("#" + answer_sort_tab).attr('className',"on");
+            }
+
+            $('#editor').TextAreaResizer();
+
+            //toggle preview of editor
+            var display = true;
+            var txt = "[hide preview]";
+            $('#pre-collapse').text(txt);
+            $('#pre-collapse').bind('click', function(){
+                txt = display ? "[show preview]" : "[hide preview]";
+                display = !display;
+                $('#previewer').toggle();
+                $('#pre-collapse').text(txt);
+            });
+        });
+
+        function submitClicked(e, f) {
+            if(!(browserTester('chrome') || browserTester('safari'))) {
+                $("input.submit")[0].disabled=true;
+            }
+            window.removeEventListener('beforeunload', beforeUnload, true);
+            if (f) {
+                f.submit();
+            }
+        }
+
+        function beforeUnload(e) {
+
+            if($("textarea#editor")[0].value != "") {
+                return yourWorkWillBeLost(e);
+            }
+
+            var commentBoxes = $("textarea.commentBox");
+            for(var index = 0; index < commentBoxes.length; index++) {
+                if(commentBoxes[index].value != "") {
+                    return yourWorkWillBeLost(e);
+                }
+            }
+        }
+        window.addEventListener('beforeunload', beforeUnload, true);
+        </script>
+        <noscript>
+            &lt;style&gt;
+                .comment.not_top_scorer {
+                    display: block;
+                }
+                .comment-form-container {
+                    display: block;
+                }
+                .div.comment-tools {
+                    display: none;
+                }
+            &lt;/style&gt;
+        </noscript>
+
+        <link rel="search" type="application/opensearchdescription+xml" href="http://cs1691x-a.moocforums.org/opensearch.xml" title="CS169.1x Search">
+        
+    <style type="text/css">.jlhlebbhengjlhmcjebbkambaekglhkf {top: 0px; left: 0px;min-width: 30px;max-width: 300px;font-size: 13px;font-family: arial, helvetica, sans-serif;opacity: .93;padding:0px;position:absolute;display:block;z-index: 999997;font-style: normal;font-variant: normal;font-weight: normal;}#jlhlebbhengjlhmcjebbkambaekglhkf_up{text-align: center;padding:0px;margin: 0px;}#jlhlebbhengjlhmcjebbkambaekglhkf_cont{background-color: #729FCF;font-family: arial, helvetica, sans-serif-webkit-box-shadow: #729FCF 0px 0px 2px;color: #FFFFFF;padding:7px;-webkit-border-radius: 5px;}#jlhlebbhengjlhmcjebbkambaekglhkf_down{text-align: center;padding:0px;margin: 0px;}</style><style type="text/css">/* Local ID — mndocdiojkckhpnhpeminpalidafeink */
+/* Web Store ID — ihmgiclibbndffejedjimfjmfoabpcke */
+
+.TnITTtw-help-selected-wrap {
+  border: 1px solid #C7C6C2;
+  box-shadow: 0 0 10px rgba(43, 43, 43, 0.325);
+  border-radius: 4px;
+  width: 231px
+}
+
+  .TnITTtw-help-inside-layout {
+    height: 133px;
+    background: #F5F5F5;
+    border-radius: 3px
+  }
+
+    .TnITTtw-left-particle {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      box-shadow: inset 0 1px 0 white;
+      color: #4E4E4E;
+      text-shadow: 0 1px 0 white;
+      width: 194px;
+      display: inline-block;
+      border-right: 1px solid #D9D9D9
+    }
+
+      .TnITTtw-content-layout {
+        text-align: left;
+        margin: 10px 15px
+      }
+
+        .TnITTtw-variant-bunch-wrap {
+
+        }
+
+          .TnITTtw-variant-bunch-wrap .inside-layout {
+
+          }
+
+            .TnITTtw-main-variant-wrap {
+
+            }
+
+              .TnITTtw-main-variant {
+                font-weight: 700;
+                font-size: 15px;
+                text-shadow: 0 1px 0 rgba(255, 255, 255, 0.775);
+                display: inline-block;
+                vertical-align: top;
+                color: #2B2B2B
+              }
+
+            .TnITTtw-variants-by-pos {
+              
+            }
+
+              .TnITTtw-TnITTtw-variant-row {
+                text-shadow: 0 1px 0 rgba(255, 255, 255, 0.775)
+              }
+
+                .TnITTtw-v-pos {
+                  font-weight: 700;
+                  margin-top: 10px;
+                  font-size: 12px;
+                  color: #545454
+                }
+
+                  .TnITTtw-v-pos:first-child {
+                    margin-top: 8px
+                  }
+
+                .TnITTtw-v-closest-wrap {
+                  font-size: 13px;
+                  color: #4E4E4E
+                }
+
+                  .TnITTtw-v-item {
+                    display: inline-block
+                  }
+
+        .TnITTtw-listen-disabled {
+          opacity: 0.475;
+          cursor: default
+        }
+
+    .TnITTtw-right-particle {
+      background: rgba(255, 255, 255, 0.125);
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      display: inline-block;
+      width: 36px;
+      height: 133px;
+      vertical-align: top;
+      box-shadow: inset 1px 0 3px rgba(43, 43, 43, 0.05), inset 0 1px 0 #F5F5F5
+    }
+
+      .TnITTtw-sidebar {
+
+      }
+
+        .TnITTtw-sbutton {
+          position: absolute;
+          -webkit-user-select: none;
+          cursor: pointer
+        }
+
+        .TnITTtw-listen-button {
+          width: 16px;
+          height: 17px;
+          background: url(chrome-extension://ihmgiclibbndffejedjimfjmfoabpcke/resources/images/sprites/sprite.png);
+          background-position: -54px 153px;
+          margin: 10px 0 0 10px
+        }
+
+          .TnITTtw-listen-button:active, .TnITTtw-listen-disabled {
+            background-position: -54px 136px
+          }
+
+/* ========== */
+/* Scrollbars */
+
+#TnITTtw-trVisibleLayout {
+  position: relative !important;
+  overflow: hidden;
+  height: 133px;
+  width: 100%
+}
+
+#TnITTtw-tr-scrollbar {
+  position: absolute;
+  display: block;
+  width: 9px; 
+  height: 135px; 
+  font-size: 1px
+}
+
+#TnITTtw-track { 
+  position: absolute;
+  left: 185px;
+  top: -134px;
+  width: 11px;
+  height: 129px;
+  background: transparent
+}
+
+#TnITTtw-dragBar {
+  position: absolute; 
+  left: 1px;
+  top: 1px;
+  width: 5px; 
+  height: 10px;
+  background: rgba(43, 43, 43, 0.475);
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 #FFF
+}
+
+  #TnITTtw-dragBar:hover, #TnITTtw-dragBar:active {
+    background: rgba(43, 43, 43, 0.775)
+  } 
+
+#TnITTtw-scrollbar, #TnITTtw-track, #TnITTtw-dragBar {
+  -webkit-user-select: none
+}
+
+.TnITTtw-arrow {
+  display: none;
+  width: 12px;
+  height: 6px;
+  background: url(chrome-extension://ihmgiclibbndffejedjimfjmfoabpcke/resources/images/sprites/sprite.png);
+  position: relative
+}
+
+.TnITTtw-top-arrow {
+  background-position: -108px 148px;
+  bottom: -1px
+}
+
+.TnITTtw-bottom-arrow {
+  background-position: -108px 154px;
+  top: -1px
+}</style><style type="text/css">#TnITTtw-tooltip-wrap {
+  position: absolute;
+  z-index: 9999;
+  font-family: Tahoma;
+  font-size: 13px;
+  line-height: normal
+}
+
+  .TnITTtw-inside-layout {
+
+  }
+
+    .TnITTtw-content {
+      
+    }</style><style type="text/css">.help-tt-wrap {
+  background: rgba(0, 0, 0, 0.575);
+  color: #FFF;
+  padding: 10px;
+  border-radius: 3px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.775)
+}
+
+  .text-layout {
+
+  }
+
+    .text-container {
+
+    }
+
+.TnITTtw-arrow {
+  display: none;
+  width: 12px;
+  height: 6px;
+  background: url(../../../images/sprites/sprite.png);
+  position: relative
+}
+
+.TnITTtw-top-arrow {
+  background-position: -18px 86px;
+  bottom: -1px
+}
+
+.TnITTtw-bottom-arrow {
+  background-position: -18px 80px;
+  top: -1px
+}</style><style type="text/css">#TnITTtw-tooltip-wrap {
+  position: absolute;
+  z-index: 9999;
+  font-family: Tahoma;
+  font-size: 13px;
+  line-height: normal
+}
+
+  .TnITTtw-inside-layout {
+
+  }
+
+    .TnITTtw-content {
+      
+    }</style><style type="text/css"></style><style type="text/css"></style></head>
+    <body>
+        <div class="wrapper">
+        
+        <!-- template header.html -->
+
+
+	<div id="roof">
+	  
+		<div id="logo">
+			<a href="http://cs1691x-a.moocforums.org/">
+				<img src="./pragmatic learning & thinking   Refactor your wetware - CS169.1x_files/saas_logo_1.png" title="back to home page" alt="CS169.1x forum logo">
+			</a>
+		</div>
+	  
+		<div id="top">
+		     <a href="http://cs1691x-a.moocforums.org/users/1194/npero">npero</a> <span class="score" title="1 karma">1</span> <a href="http://cs1691x-a.moocforums.org/logout/">logout</a>  <a href="http://cs1691x-a.moocforums.org/about/">about</a>  <a href="http://cs1691x-a.moocforums.org/faq/">faq</a> 
+		</div>
+
+    <div id="nav">
+        <a id="nav_questions" class="on" href="http://cs1691x-a.moocforums.org/questions/" classname="on">Questions</a><a id="nav_tags" href="http://cs1691x-a.moocforums.org/tags/">Tags</a><a id="nav_users" href="http://cs1691x-a.moocforums.org/users/">Users</a><a id="nav_badges" href="http://cs1691x-a.moocforums.org/badges/">Badges</a><a id="nav_unanswered" href="http://cs1691x-a.moocforums.org/questions/unanswered/">Unanswered</a>
+        <a id="nav_ask" href="http://cs1691x-a.moocforums.org/questions/ask/" class="special">Ask a Question</a>
+    </div>
+  </div>
+
+  <div class="clear"></div>
+  
+	<div id="searchBar">
+    <form action="http://cs1691x-a.moocforums.org/search/" method="get">
+        <div style="display:none"><input type="hidden" name="csrfmiddlewaretoken" value="35f581757986327e90ced3019a9076b0"></div>
+        <div>
+            <input type="text" class="searchInput" value="" name="q" id="keywords">
+            <input type="submit" name="Submit" value="Search" class="searchBtn">
+        </div>
+        <div class="options">
+            <input id="type-question" type="radio" value="question" name="t" checked="checked"><label for="type-question">Questions</label>
+            <input id="type-tag" type="radio" value="tag" name="t"><label for="type-tag">Tags</label>
+            <input id="type-user" type="radio" value="user" name="t"><label for="type-user">Users</label>
+        </div>
+    </form>	
+	</div>
+
+	
+
+<!-- end template header.html -->
+
+        
+
+
+
+<div id="wrapper">
+    
+    
+    <div id="room">
+        <div id="CALeft">
+            
+<div class="headNormal">
+    <h1><a href="./pragmatic learning & thinking   Refactor your wetware - CS169.1x_files/pragmatic learning & thinking   Refactor your wetware - CS169.1x.htm">pragmatic learning &amp; thinking : Refactor your wetware</a></h1>
+</div>
+<div id="main-body" class="">
+    <div id="askform">
+            <table style="width:100%;" id="question-table">
+                <tbody><tr>
+                    <td style="width:30px;vertical-align:top">
+                        <div class="vote-buttons">
+                            
+                                
+
+<a id="post-372-upvote" title="This post is useful (click again to undo)" class="ajax-command post-vote up " href="http://cs1691x-a.moocforums.org/vote/372/up/" rel="nofollow"> </a>
+<div id="post-372-score" class="post-score" title="current number of votes">
+    1
+</div>
+<a id="post-372-downvote" title="This post is not useful (click again to undo)" class="ajax-command post-vote down" href="http://cs1691x-a.moocforums.org/vote/372/down/" rel="nofollow"> </a>
+                            
+                            
+
+<a id="favorite-mark" title="mark/unmark this question as favorite (click again to cancel)" class="ajax-command favorite-mark " href="http://cs1691x-a.moocforums.org/mark_favorite/372/" rel="nofollow"> </a>
+<div id="favorite-count" class="favorite-count">
+   
+</div>
+                            
+                        </div>
+                    </td>
+                    <td>
+                        <div id="item-right">
+                            <div class="question-body">
+                                <p>I wanna ask you guys if someone here is reading or read that book , I started yesterday and I'm at the third chapter , I wanna know if there's a possibility to discuss the content of the book !</p>
+                            </div>
+                            <div id="question-tags" class="tags-container tags">
+                                
+                                    <a href="http://cs1691x-a.moocforums.org/tags/book/" class="post-tag tag-link-book" title="see questions tagged &#39;book&#39;" rel="tag">book</a>
+                                
+                            </div>
+                            <div id="question-controls" class="post-controls">                            
+                                
+
+                                
+
+                            </div>
+                            <div class="post-update-info-container">
+                                    
+<div class="post-update-info post-update-info-user">
+    <p style="line-height:12px;">
+        asked
+        <strong>07 Jul, 11:08</strong>
+    </p>
+    <img class="gravatar" width="32" height="32" src="./pragmatic learning & thinking   Refactor your wetware - CS169.1x_files/9d79319d71e550a35fc0c77eb2e45b61" alt="smokygirl&#39;s gravatar image">
+    <p><a href="http://cs1691x-a.moocforums.org/users/43/smokygirl">smokygirl</a><br>
+    <span class="score" title="760 karma">760</span><span title="1 Badges"><span class="badge1">●</span><span class="badgecount">1</span></span><span title="7 Badges"><span class="silver">●</span><span class="badgecount">7</span></span><span title="17 Badges"><span class="bronze">●</span><span class="badgecount">17</span></span><br>
+    
+    <span title="Rate of the user&#39;s accepted answers" class="accept_rate">accept rate:</span>
+    <span title="smokygirl has one accepted answer">4%</span>
+    </p>
+</div>
+
+
+                            </div>
+                            
+
+
+
+
+<div class="comments-container" id="comments-container-372">
+    
+</div>
+<div id="comment-tools-372" class="comment-tools">
+    
+    
+        <a href="http://cs1691x-a.moocforums.org/questions/372/pragmatic-learning-thinking-refactor-your-wetware#" class="add-comment-link">add a comment</a>
+    
+</div>
+
+
+
+
+<div class="clear"></div>
+<div id="comment-372-form-container" class="comment-form-container">
+    
+    <form id="comment-372-form" method="post" action="http://cs1691x-a.moocforums.org/comment/372/" accept-charset="utf-8"><div style="display:none;"><input type="hidden" id="csrfmiddlewaretoken" name="csrfmiddlewaretoken" value="35f581757986327e90ced3019a9076b0"></div>
+        <div style="display:none"><input type="hidden" name="csrfmiddlewaretoken" value="35f581757986327e90ced3019a9076b0"></div>
+        <div class="comment-form-widgets-container">
+            <textarea name="comment" class="commentBox" id="comment" style="padding-top: 0px; padding-bottom: 0px; resize: none; overflow: hidden; height: 80px;"></textarea>
+            <div class="comment-form-buttons">
+                <span id="comment-372-chars-left" class="comment-chars-left">
+                    <span class="comments-char-left-count">10</span>
+                    <span class="comments-chars-togo-msg">characters needed</span>
+                    <span class="comments-chars-left-msg" style="display: none;">characters left</span>
+                </span>
+                <input type="submit" class="comment-submit" value=" comment" disabled="disabled">
+                <input type="submit" class="comment-cancel" value=" cancel">
+            </div>
+            <div class="clear"></div>
+            
+        </div>
+        <script type="text/html" class="new-comment-skeleton" id="new-comment-skeleton-372">
+            <div class="comment not_top_scorer" id="comment-%ID%">
+                <div id="post-%ID%-score" class="comment-score"></div>
+                <div class="comment-text">%COMMENT%</div>
+                <div class="comment-info" id="comment-%ID%-info">
+                    <a id="comment-%ID%-edit" href="%EDIT_URL%" title="Edit comment"
+                        class="comment-edit" rel="nofollow"> </a>
+                    <a id="comment-%ID%-delete" href="%DELETE_URL%" title="Delete comment"
+                        class="ajax-command comment-delete confirm" rel="nofollow"> </a>
+                    <a rel="nofollow" id="comment-%ID%-convert" style="display:none;" href="%CONVERT_URL%" title="Convert comment to answer"
+                        class="ajax-command comment-convert confirm" rel="nofollow"> </a>
+
+                    <span class="comment-age">(just now)</span>
+                    <a class="comment-user" href="%PROFILE_URL%">%USERNAME%</a>
+                    
+                        
+                    
+                </div>
+             </div>
+        </script>
+    </form>
+    
+</div>
+<div class="clear"></div>
+
+
+
+                        </div>
+                        
+                    </td>
+                </tr>
+            </tbody></table>
+            
+            
+                <hr>
+                <div class="tabBar">
+                    <a name="sort-top"></a>
+                    <div class="headQuestions">
+                    One Answer:
+                    </div>
+                    
+<div class="tabsA"><a href="http://cs1691x-a.moocforums.org/questions/372/pragmatic-learning-thinking-refactor-your-wetware?sort=oldest" title="oldest answers will be shown first">oldest</a><a href="http://cs1691x-a.moocforums.org/questions/372/pragmatic-learning-thinking-refactor-your-wetware?sort=newest" title="newest answers will be shown first">newest</a><a href="http://cs1691x-a.moocforums.org/questions/372/pragmatic-learning-thinking-refactor-your-wetware?sort=votes" class="on" title="most voted answers will be shown first">most voted</a></div>
+
+                </div>
+                
+  
+                
+                    <a name="377"></a>
+                    <div id="answer-container-377" class="answer ">
+                        <table style="width:100%;">
+                            <tbody><tr>
+                                <td style="width:30px;vertical-align:top">
+                                    <div class="vote-buttons">
+                                        
+                                            
+
+<a id="post-377-upvote" title="This post is useful (click again to undo)" class="ajax-command post-vote up " href="http://cs1691x-a.moocforums.org/vote/377/up/" rel="nofollow"> </a>
+<div id="post-377-score" class="post-score" title="current number of votes">
+    0
+</div>
+<a id="post-377-downvote" title="This post is not useful (click again to undo)" class="ajax-command post-vote down" href="http://cs1691x-a.moocforums.org/vote/377/down/" rel="nofollow"> </a>
+                                        
+                                        
+
+
+    
+
+
+
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="item-right">
+                                        <div class="answer-body">
+                                            <p>I think it is a good idea. I am reading the book, but in that moment I am at the Second chapter. Sorry!! I have not started the Ruby chapter.</p>
+                                        </div>
+                                        <div class="answer-controls post-controls">
+                                            
+<span class="action-link"><a rel="nofollow" title="answer permanent link" class="ajax-command withprompt  copy" href="http://cs1691x-a.moocforums.org/answer_link/377/">link</a></span>
+                                            
+
+                                        </div>
+                                        <div class="post-update-info-container">
+                                            
+<div class="post-update-info post-update-info-user">
+    <p style="line-height:12px;">
+        answered
+        <strong>07 Jul, 11:52</strong>
+    </p>
+    <img class="gravatar" width="32" height="32" src="./pragmatic learning & thinking   Refactor your wetware - CS169.1x_files/324e32f80ee631b757163133d980f90f" alt="Jose%20Olmos&#39;s gravatar image">
+    <p><a href="http://cs1691x-a.moocforums.org/users/1045/jose-olmos">Jose Olmos</a><br>
+    <span class="score" title="301 karma">301</span><span title="2 Badges"><span class="silver">●</span><span class="badgecount">2</span></span><span title="11 Badges"><span class="bronze">●</span><span class="badgecount">11</span></span><br>
+    
+    <span title="Rate of the user&#39;s accepted answers" class="accept_rate">accept rate:</span>
+    <span title="Jose Olmos has 2 accepted answers">20%</span>
+    </p>
+</div>
+
+
+                                        </div>
+                                        
+
+
+
+
+<div class="comments-container" id="comments-container-377">
+    
+        <a name="380"></a>
+        <div class="comment" id="comment-380">
+	    
+                <div id="post-380-score" class="comment-score"></div>
+            
+            <div class="comment-text"><p>I can wait, no problem :)</p></div>
+            <div class="comment-info" id="comment-380-info">
+                
+                    <a id="post-380-upvote" href="http://cs1691x-a.moocforums.org/like_comment/380/" title="this is a great comment" class="ajax-command comment-like" rel="nofollow"> </a>
+                
+                
+                
+                
+
+                
+
+                <span class="comment-age">(07 Jul, 11:56)</span>
+                <a class="comment-user userinfo" href="http://cs1691x-a.moocforums.org/users/43/smokygirl">smokygirl</a>
+                
+            </div>
+        </div>
+    
+</div>
+<div id="comment-tools-377" class="comment-tools">
+    
+    
+        <a href="http://cs1691x-a.moocforums.org/questions/372/pragmatic-learning-thinking-refactor-your-wetware#" class="add-comment-link">add a comment</a>
+    
+</div>
+
+
+
+
+<div class="clear"></div>
+<div id="comment-377-form-container" class="comment-form-container">
+    
+    <form id="comment-377-form" method="post" action="http://cs1691x-a.moocforums.org/comment/377/" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="csrfmiddlewaretoken" value="35f581757986327e90ced3019a9076b0"></div>
+        <div style="display:none"><input type="hidden" name="csrfmiddlewaretoken" value="35f581757986327e90ced3019a9076b0"></div>
+        <div class="comment-form-widgets-container">
+            <textarea name="comment" class="commentBox" id="comment" style="padding-top: 0px; padding-bottom: 0px; resize: none; overflow: hidden; height: 80px;"></textarea>
+            <div class="comment-form-buttons">
+                <span id="comment-377-chars-left" class="comment-chars-left">
+                    <span class="comments-char-left-count">10</span>
+                    <span class="comments-chars-togo-msg">characters needed</span>
+                    <span class="comments-chars-left-msg" style="display: none;">characters left</span>
+                </span>
+                <input type="submit" class="comment-submit" value=" comment" disabled="disabled">
+                <input type="submit" class="comment-cancel" value=" cancel">
+            </div>
+            <div class="clear"></div>
+            
+        </div>
+        <script type="text/html" class="new-comment-skeleton" id="new-comment-skeleton-377">
+            <div class="comment not_top_scorer" id="comment-%ID%">
+                <div id="post-%ID%-score" class="comment-score"></div>
+                <div class="comment-text">%COMMENT%</div>
+                <div class="comment-info" id="comment-%ID%-info">
+                    <a id="comment-%ID%-edit" href="%EDIT_URL%" title="Edit comment"
+                        class="comment-edit" rel="nofollow"> </a>
+                    <a id="comment-%ID%-delete" href="%DELETE_URL%" title="Delete comment"
+                        class="ajax-command comment-delete confirm" rel="nofollow"> </a>
+                    <a rel="nofollow" id="comment-%ID%-convert" style="display:none;" href="%CONVERT_URL%" title="Convert comment to answer"
+                        class="ajax-command comment-convert confirm" rel="nofollow"> </a>
+
+                    <span class="comment-age">(just now)</span>
+                    <a class="comment-user" href="%PROFILE_URL%">%USERNAME%</a>
+                    
+                        
+                    
+                </div>
+             </div>
+        </script>
+    </form>
+    
+</div>
+<div class="clear"></div>
+
+
+
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+                
+                <div class="paginator-container-left">
+                    
+                </div>
+            
+        <form id="fmanswer" action="http://cs1691x-a.moocforums.org/questions/372/answer/" method="post"><div style="display:none;"><input type="hidden" name="csrfmiddlewaretoken" value="35f581757986327e90ced3019a9076b0"></div>
+            <div style="display:none"><input type="hidden" name="csrfmiddlewaretoken" value="35f581757986327e90ced3019a9076b0"></div>
+            <div style="clear:both">
+            </div>
+            
+            
+                <div style="padding:10px 0 0 0;">
+                    <div class="headNormal">
+                        
+                            Your answer
+                        
+                    </div>
+                </div>
+                
+
+                <div id="description" class="">
+                    <div id="wmd-button-bar" class="wmd-panel"><ul id="wmd-button-row"><li class="wmd-button" id="wmd-bold-button" title="Strong &lt;strong&gt; Ctrl+B" style="background-position: 0px 0px;"></li><li class="wmd-button" id="wmd-italic-button" title="Emphasis &lt;em&gt; Ctrl+I" style="background-position: -20px 0px;"></li><li class="wmd-spacer" id="wmd-spacer1"></li><li class="wmd-button" id="wmd-link-button" title="Hyperlink &lt;a&gt; Ctrl+L" style="background-position: -40px 0px;"></li><li class="wmd-button" id="wmd-quote-button" title="Blockquote &lt;blockquote&gt; Ctrl+Q" style="background-position: -60px 0px;"></li><li class="wmd-button" id="wmd-code-button" title="Code Sample &lt;pre&gt;&lt;code&gt; Ctrl+K" style="background-position: -80px 0px;"></li><li class="wmd-button" id="wmd-image-button" title="Image &lt;img&gt; Ctrl+G" style="background-position: -100px 0px;"></li><li class="wmd-spacer" id="wmd-spacer2"></li><li class="wmd-button" id="wmd-olist-button" title="Numbered List &lt;ol&gt; Ctrl+O" style="background-position: -120px 0px;"></li><li class="wmd-button" id="wmd-ulist-button" title="Bulleted List &lt;ul&gt; Ctrl+U" style="background-position: -140px 0px;"></li><li class="wmd-button" id="wmd-heading-button" title="Heading &lt;h1&gt;/&lt;h2&gt; Ctrl+H" style="background-position: -160px 0px;"></li><li class="wmd-button" id="wmd-hr-button" title="Horizontal Rule &lt;hr&gt; Ctrl+R" style="background-position: -180px 0px;"></li><li class="wmd-spacer" id="wmd-spacer3"></li><li class="wmd-button" id="wmd-undo-button" title="Undo - Ctrl+Z" style="background-position: -200px -20px;"></li><li class="wmd-button" id="wmd-redo-button" title="Redo - Ctrl+Y" style="background-position: -220px -20px;"></li><li class="wmd-button" id="wmd-help-button" style="background-position: -240px 0px;"><a href="http://daringfireball.net/projects/markdown/syntax" target="_blank" title="MarkDown Syntax"></a></li></ul></div>
+                    <div class="resizable-textarea"><span><textarea rows="10" cols="40" name="text" id="editor" class="processed"></textarea><div class="grippie" style="margin-right: -6px;"></div></span></div>
+                    <div class="preview-toggle">
+                        <table width="100%">
+                            <tbody><tr>
+                                <td>
+                                    <span id="pre-collapse" title="Toggle the real time Markdown editor preview">[hide preview]</span>
+                                </td>
+                                <td style="text-align: right;" id="editor-metrics"></td>
+                                
+                                <td style="text-align:right;">
+                                    <input type="checkbox" name="wiki" id="id_wiki"> 
+                                    <span style="font-weight:normal;cursor:help" title="if you choose community wiki option, the question and answer do not generate points and name of author will not be shown">
+                                            <label for="id_wiki">community wiki</label> 
+                                    </span>
+                                </td>
+                                
+                            </tr>
+                        
+                        </tbody></table>  
+                    </div>
+                    
+                    <div id="previewer" class="wmd-preview"></div>
+                </div>
+
+	            
+                
+                <p><span class="form-error"></span></p>
+                <input type="button" value="Post Your Answer" class="submit" style="float:left" onclick="submitClicked(event, this.form)">
+            
+        </form>
+    </div>
+</div>
+
+
+        </div>
+        <div id="CARight">
+            
+<div class="boxC" id="subscription_box">
+    <h3 class="subtitle">Follow this question</h3><strong>By Email:</strong><div class="subscription-status"><p>You are not subscribed to this question.</p></div><p><a class="ajax-command sidebar_button subscription_switch" href="http://cs1691x-a.moocforums.org/subscribe/372/">
+        
+            subscribe me
+        
+    </a></p><p>
+        
+            (you can adjust your notification settings on your <a href="http://cs1691x-a.moocforums.org/users/1194/npero/subscriptions/">profile</a>)
+        
+    </p><strong>By RSS:</strong><p><a class="feed-icon" style="background-image:url(&#39;/m/default/media/images/feed-icon-small.png&#39;);" href="http://cs1691x-a.moocforums.org/questions/372/pragmatic-learning-thinking-refactor-your-wetware?type=rss" title="subscribe to answers"></a>
+    Answers
+</p><p><a class="feed-icon" style="background-image:url(&#39;/m/default/media/images/feed-icon-small.png&#39;);" href="http://cs1691x-a.moocforums.org/questions/372/pragmatic-learning-thinking-refactor-your-wetware?type=rss&comments=yes" title="subscribe to comments and answers"></a>
+    Answers and Comments
+</p>
+
+</div>
+
+
+<div class="boxC" id="editor_side_bar" style="display: none;">
+    <p class="subtitle darkred">Markdown Basics</p>
+    <ul class="list-item">
+        <li>
+            *italic* or _italic_
+        </li>
+        <li>
+			**bold** or __bold__
+        </li>
+        <li>
+            <b>link</b>:[text](http://url.com/ "Title")
+
+        </li>
+
+        <li>
+            <b>image</b>?![alt text](/path/img.jpg "Title")
+
+        </li>
+        <li>
+			numbered list:
+            1.  Foo
+            2.  Bar
+        </li>
+        <li>
+			to add a line break simply add two spaces to where you would like the new line to be.
+        </li>
+        <li>
+			basic HTML tags are also supported
+        </li>
+    </ul>
+    <p class="info-box-follow-up-links">
+        <a href="http://cs1691x-a.moocforums.org/markdown_help/" target="_blank">learn more about Markdown </a>
+    </p>
+</div>
+
+
+
+
+
+
+
+
+<div class="boxC">
+    <p>
+		Tags:
+    </p>
+    <p class="tags">
+        
+        	<a href="http://cs1691x-a.moocforums.org/tags/book/" class="tag-link-book" title="see questions tagged&#39;book&#39;using tags" rel="tag">book</a> <span class="tag-number">×3</span><br>
+        
+    </p>
+    <p>
+        Asked: <strong title="July 7, 2013, 11:08 a.m.">07 Jul, 11:08</strong>
+    </p>
+    <p> 
+     	Seen: <strong>39 times</strong>
+    </p>
+    <p> 
+        Last updated: <strong title="July 7, 2013, 11:56 a.m.">07 Jul, 11:56</strong>
+    </p>
+</div>
+
+
+
+
+<div id="sidebar-lower" class="boxC">
+    <div class="body">
+        <h2>Course links</h2>
+<p><a href="https://courses.edx.org/courses/BerkeleyX/CS-169.1x/2013_Summer/">Return to course homepage</a></p>
+<p><a href="http://cs1691x-a.moocforums.org/consent/">Review consent form</a></p>
+<p><a href="https://courses.edx.org/courses/BerkeleyX/CS-169.1x/2013_Summer/discussion/forum">Visit old-style edX discussion forum</a></p>
+     </div>
+</div>
+
+
+<div class="boxC">
+    <h3 class="subtitle">Related questions</h3>
+    <div class="questions-related">
+
+        
+        <p>
+            <a href="http://cs1691x-a.moocforums.org/questions/176/the-books-that-a-developer-must-read">the books that a developer must read</a>
+        </p>
+        
+        <p>
+            <a href="http://cs1691x-a.moocforums.org/questions/1073/project-36-help">Project 3.6 help?</a>
+        </p>
+        
+
+    </div>
+</div>
+
+
+
+        </div>
+        <div id="tail" style="clear:both;">
+            
+            
+        </div>
+    </div>
+    <div class="spacer3"></div>
+</div>
+
+        
+            <div id="ground">
+                
+
+
+<div>
+    <div class="footerLinks">
+         <a href="http://cs1691x-a.moocforums.org/about/">about</a> <span class="link-separator"> |</span> <a href="http://cs1691x-a.moocforums.org/faq/">faq</a> <span class="link-separator"> |</span> <a href="http://cs1691x-a.moocforums.org/privacy/">privacy</a> <span class="link-separator"> |</span> <a href="mailto:dcoetzee@eecs.berkeley.edu" target="_blank">support</a> <span class="link-separator"> |</span> <a href="mailto:dcoetzee@eecs.berkeley.edu">contact</a> 
+    </div>
+  <p>
+     <a href="http://osqa.net/" target="_blank" title="OSQA Development Build (SVN-1000)">
+        powered by OSQA
+     </a>
+  </p>
+</div>
+ <div id="licenseLogo">
+  <a rel="license" href="http://creativecommons.org/publicdomain/zero/1.0/">
+            <img src="./pragmatic learning & thinking   Refactor your wetware - CS169.1x_files/cc-zero-88x31.png" title="Creative Commons CC0: Public Domain Dedication" alt="cc0" width="88" height="31">
+  </a>
+ </div>
+
+
+            </div>
+        
+        
+
+        
+        </div>
+
+        <!-- Put all elements with fixed position here, IE6 fixed position fix: http://ryanfait.com/position-fixed-ie6/ -->
+        <div class="notify" style="display:none">
+            
+                
+            
+            <a id="close-notify" onclick="notify.close(true)">×</a>
+        </div>
+    
+
+<!-- end template base_content.html -->
+</body></html>
